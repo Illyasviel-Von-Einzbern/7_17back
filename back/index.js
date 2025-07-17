@@ -43,6 +43,6 @@ app.all(/.*/, (req, res) => {
 })
 // 處理未定義的路由
 
-app.listen(4000, () => {
+app.listen( process.env.PORT || 4000, () => {
   console.log('伺服器啟動')
 })
